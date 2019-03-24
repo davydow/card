@@ -1,0 +1,114 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Margarine|Orbitron');
+</style>
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(bg.jpg);
+  background-size: cover;
+  font-family: 'orbitron', sans-serif; 
+}
+
+.calendar 
+{
+ width: 300px;
+ height: auto;
+ background: #fff;
+ box-sizing: border-box;
+ box-shadow: 0 5px 50px;
+ text-align: center;
+}
+
+.calendar .image
+{
+  width: 100%;
+  height: 200px;
+  background: url(https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-ig0nh3ogv5hccu92l060c9hl81-20170918140507.Medi.jpeg);
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.calendar .image h2,
+.calendar .image h3
+{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 0 2px 2px rgb(0,0,0, .2);
+}
+
+.calendar .image h3
+{
+  font-weight: 500px;
+}
+
+.calendar .date 
+{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+  box-sizing: border-box;
+  }
+  
+  .calendar .date div
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    color: #262626;
+  } 
+
+    .calendar .date div.day
+    {
+      font-weight: 700px;
+    }
+
+    .calendar .date div.day:first-child,
+    .calendar .date div.number:nth-child(7n +1)
+    {
+      color: #ff685d;
+      font-weight: 700px;
+    }
+
+     .calendar .date div.number.active,
+     .calendar .date div.number:hover
+     {
+      background: #009688;
+      color: #fff;
+      font-weight: 700px;
+      cursor: pointer;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
